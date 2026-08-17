@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Kensy</title>
+  </head>
+  <body>
+    <header class="topo">
+      <img
+        src="img/logo01.png"
+        alt="Logo da Casa Kensy"
+        onclick="window.location.href = 'inicio.html'"
+        id="logo"
+      />
+      <nav class="menu">
+        <ul>
+          <li><a href="inicio.html" class="linkMenu">Início</a></li>
+          <li><a href="localizacao.html" class="linkMenu">Localização</a></li>
+          <li><a href="produtos.html" class="linkMenu">Produtos</a></li>
+          <li><a href="sobre.html" class="linkMenu">Sobre</a></li>
+        </ul>
+      </nav>
+      <button onclick="mudarTema()" id="botaoTema">🌙 Tema</button>
+    </header>
+
+    <main class="principal-sobre">
+      <h1>Sobre nós - Casa Kensy</h1>
+      <h3>Quem somos, objetivos e valores</h3>
+      <img src="img/08.jpeg" alt="Imagem da Casa Kensy" />
+      <h3>Quem somos</h3>
+      <p>
+        Somos uma mini empresa com uma variedade de produtos, todos eles com
+        notabilidade e qualidade.
+      </p>
+      <p>Missão: Oferecer produtos de qualidade</p>
+      <p>Visão: Crescer no mercado e atender a maior quantidade de clientes</p>
+      <p>Valores: Integridade, compromisso e excelência</p>
+      <h4>O que oferecemos?</h4>
+      <p>Nós trabalhamos com:</p>
+      <ul>
+        <li>Papelaria</li>
+        <li>Tabacaria</li>
+        <li>Material Escolar</li>
+        <li>Montagem de Currículos</li>
+      </ul>
+      <p>
+        Atendemos também tanto presencialmente quanto online. Assim alcançando
+        mais pessoas.
+      </p>
+      <p>
+        Nosso diferencial é a variedade de produtos que oferecemos. Nenhum outro
+        bazar oferece tanta diversidade.
+      </p>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodapeConteudo">
+        <div class="contato">
+          <p class="contatoTexto">
+            Contatos: <br />
+            Telefone: (51) 99133-6359 <br />
+            Email: contato@casakensy.com.br
+          </p>
+        </div>
+
+        <div class="horario">
+          <p>Horário: Seg-Sáb, 08h às 18h</p>
+          <a href="inicio.html#horario" id="linkHorario">Ver detalhes</a>
+        </div>
+      </div>
+      <p id="direitos">Todos os direitos reservados &copy; 2023 Casa Kensy</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

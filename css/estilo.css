@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+/* ------------------------------------------------Estilo para o site da Casa Kensy -------------------------------------------------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+body {
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+}
+body.escuro {
+  background-color: #24438f;
+  color: white;
+
+}
+body.escuro a{
+  color: #ffd600;
+}
+body.escuro .linkMenu {
+  color: white;
+}
+.principal-inicio,
+.principal-formulario,
+.principal-localizacao,
+.principal-index,
+.principal-sobre {
+  flex: 1;
+}
+.topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0049ad;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+.topo img {
+  max-height: 100px;
+  height: auto;
+}
+#logo:hover {
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.menu a:hover {
+  color: #ffd600;
+  border-radius: 5px;
+}
+.menu ul {
+  list-style: none;
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+}
+#botaoTema {
+  background-color: #0049ad;
+  border: none;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  margin-left: auto;
+  color: white;
+}
+#botaoTema:hover {
+  background-color: #003580;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.localizacao {
+  border: 1px solid #333;
+  border-radius: 5px;
+  height: 20pc;
+}
+.tabelaHorario {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+.tabelaHorario th,
+.tabelaHorario td {
+  border: 1px solid #333;
+  padding: 5px;
+  text-align: center;
+}
+.tabelaHorario th {
+  background-color: #ffd600;
+  color: #0049ad  
+}
+.tabelaHorario td {
+  background-color: white;
+  color: #0049ad;
+}
+.rodape {
+  display: flex;
+  flex-direction: column; /* IMPORTANTE */
+  background-color: #0049ad;
+  color: white;
+  padding: 20px;
+}
+.rodapeConteudo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#direitos {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+.contatoTexto {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+.horario {
+  font-weight: bold;
+  min-width: 150px;
+}
+#linkHorario {
+  color: #ffd600;
+}
+/* ------------------------------------------------Estilo index.html -------------------------------------------------*/
+.principal-index {
+  text-align: center;
+  background-color: #0049ad;
+  color: white;
+}
+#logoIndex {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+h3 {
+  text-align: center;
+}
+#botoes {
+  color: #0049ad;
+  background-color: #ffd600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bolder;
+  position: relative;
+}
+#botoes:hover {
+  background-color: #d3b311;
+  cursor: pointer;
+}
+.rodape-index {
+  margin: 0;
+  color: white;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #0049ad;
+}
+/* ----------------------------------------Estilo formulario.html---------------------------------------- */
+body.escuro .bordaFormulario {
+  background-color: #0049ad;
+}
+body.escuro #botoes {
+  background-color: #ffd600;
+  color: #0049ad;
+}
+body.escuro #botoes:hover {
+  background-color: #d3b311;
+  color: white;
+}
+.paginaFormulario.escuro #botaoTema {
+  background-color: #24438f;
+  color: white;
+}
+.paginaFormulario.escuro #botaoTema:hover {
+  background-color: #003580;
+  color: white;
+}
+.paginaFormulario {
+  background-color: #ffd600;
+  color: white;
+}
+.paginaFormulario #botaoTema {
+  background-color: #ffd600;
+  color: black;
+}
+.paginaFormulario #botoes {
+  background-color: #0049ad;
+  color: white;
+}
+.paginaFormulario #botoes:hover {
+  background-color: #003580;
+}
+.topo-formulario {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px;
+}
+#titulo {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.principal-formulario {
+  padding: 20px;
+  text-align: center;
+}
+.bordaFormulario {
+  border: 1px solid #333;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #0049ad;
+  margin-bottom: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.bordaFormulario input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+#dataNascimento {
+  width: 120px;
+}
+#selecao {
+  max-width: 50px;
+  max-height: 40px;
+  border-radius: 3px;
+}
+.dataSelecao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------------------------------------Estilo inicio.html -------------------------------------------------*/
+.principal-inicio {
+  text-align: center;
+  margin-top: 120px;
+}
+.principal-inicio img {
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+.destaques {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+.card {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+}
+.card img {
+  max-height: 150px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.8s;
+}
+.card img:hover {
+  transform: scale(1.4);
+}
+/* ------------------------------------------------Estilo localizacao.html -------------------------------------------------*/
+.principal-localizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+.fotoLocalizacao {
+  max-height: 300px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.endereco {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+#botaoMaps {
+  text-decoration: none;
+  background-color: #ffd600;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#logoMaps {
+  height: 100%;
+  max-height: 30px;
+}
+/* ------------------------------------------------Estilo produtos.html -------------------------------------------------*/
+.principal-produtos {
+  text-align: center;
+  margin-top: 120px;
+}
+#entradaImagem {
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.principal-produtos img {
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+.galeriaProdutos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.item {
+  text-align: center;
+}
+.item p {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.imagemGaleria {
+  aspect-ratio: 1 / 1;
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform 0.8s;
+}
+.imagemGaleria:hover {
+  transform: scale(1.2);
+  
+}
+/* ------------------------------------------------Estilo sobre.html -------------------------------------------------*/
+.principal-sobre {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  line-height: 1.4;
+}
+.principal-sobre img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.principal-sobre h3 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.principal-sobre p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.principal-sobre ul {
+  text-align: left;
+}

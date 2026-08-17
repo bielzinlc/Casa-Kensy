@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Kensy</title>
+  </head>
+  <body class="paginaFormulario">
+    <header class="topo-formulario">
+      <div class="botao">
+        <button onclick="mudarTema()" id="botaoTema">🌙 Tema</button>
+      </div>
+    </header>
+
+    <main class="principal-formulario">
+      <h2>Registro</h2>
+      <form action="inicio.html" method="get" id="formCadastro">
+        <fieldset class="bordaFormulario">
+          <input
+            type="text"
+            id="nome"
+            maxlength="30"
+            name="nome"
+            placeholder="Nome..."
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxlength="50"
+            placeholder="Email..."
+            required
+          />
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            maxlength="15"
+            placeholder="Senha..."
+            required
+          />
+          <div class="dataSelecao">
+          <input 
+          type="date" 
+          name="dataNascimento" 
+          id="dataNascimento"
+          min="1950-01-01"
+          max="2026-01-01"
+          required>
+          <select name="uf" id="selecaoUF" required>""
+            <option value=""></option>
+          <option value="rs">RS</option>
+          <option value="sc">SC</option>
+          <option value="pr">PR</option>
+          <option value="rj">RJ</option>
+          <option value="sp">SP</option>
+          </select>
+          </div>  
+          <label for="sexo">
+            <input
+              type="radio"
+              name="sexo"
+              id="sexoMasculino"
+              value="m"
+              class="radio"
+              required
+            /><label for="sexoMasculino">Masculino</label>
+            <input
+              type="radio"
+              name="sexo"
+              id="sexoFeminino"
+              value="f"
+              class="radio"
+              required
+            /><label for="sexoFeminino">Feminino</label>
+            <input 
+            type="radio" 
+            name="sexo" 
+            id="sexoOutro" 
+            value="o" 
+            class="radio" 
+            required/><label for="sexoOutro">Outro
+          </label>
+        </fieldset>
+        <input type="button" value="Salvar" id="botoes" onclick="validarFormulario(); saudacao();" />
+      </form>
+    </main>
+
+    <footer class="rodape">
+      <p class="contato">
+        Contatos: <br />
+        Telefone: (51) 99133-6359 <br />
+        Email: contato@casakensy.com.br
+      </p>
+      <p id="direitos">Todos os direitos reservados &copy; 2023 Casa Kensy</p>
+    </footer>
+
+    <script src="js/script.js"></script></script>
+  </body>
+</html>

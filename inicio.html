@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Kensy</title>
+  </head>
+  <body>
+    <header class="topo">
+      <img
+        src="img/logo01.png"
+        alt="Logo da Casa Kensy"
+        onclick="window.location.href = 'inicio.html'"
+        id="logo"
+      />
+      <nav class="menu">
+        <ul>
+          <li><a href="inicio.html" class="linkMenu">Início</a></li>
+          <li><a href="localizacao.html" class="linkMenu">Localização</a></li>
+          <li><a href="produtos.html" class="linkMenu">Produtos</a></li>
+          <li><a href="sobre.html" class="linkMenu">Sobre</a></li>
+        </ul>
+      </nav>
+      <button onclick="mudarTema()" id="botaoTema">🌙 Tema</button>
+    </header>
+
+    <main class="principal-inicio">
+      <h1>Bem-vindo à Casa Kensy</h1>
+      <section class="banner">
+        <p>Qualidade, variedade e os melhores preços você encontra aqui!</p>
+      </section>
+      <section>
+        <h2>Sobre nós</h2>
+        <p>
+          A Casa Kensy é uma empresa dedicada a fornecer produtos de qualidade e
+          serviços excepcionais para nossos clientes.
+        </p>
+        <a href="sobre.html">Saiba mais</a>
+      </section>
+      <h2>Itens em destaque!</h2>
+      <section class="destaques">
+        <div class="card">
+          <img
+            src="img/destaque01.jpeg"
+            alt="Item destaque 1"
+            class="itemDestaque"
+          />
+          Pct 50 Folhas A4 180g/m²
+        </div>
+        <div class="card">
+          <img
+            src="img/destaque02.jpeg"
+            alt="Item destaque 2"
+            class="itemDestaque"
+          />
+          E.V.A's
+        </div>
+        <div class="card">
+          <img
+            src="img/destaque03.jpeg"
+            alt="Item destaque 3"
+            class="itemDestaque"
+          />
+          PenDrive's de Música 4GB
+        </div>
+      </section>
+      <a href="produtos.html">Ver mais produtos</a>
+
+      <h2 id="horario">Horário de atendimento</h2>
+      <table class="tabelaHorario">
+        <tr>
+          <th>Dia</th>
+          <th>Horário</th>
+        </tr>
+        <tr>
+          <td>Segunda-feira</td>
+          <td>08h - 18h</td>
+        </tr>
+        <tr>
+          <td>Terça-feira</td>
+          <td>08h - 18h</td>
+        </tr>
+        <tr>
+          <td>Quarta-feira</td>
+          <td>08h - 18h</td>
+        </tr>
+        <tr>
+          <td>Quinta-feira</td>
+          <td>08h - 18h</td>
+        </tr>
+        <tr>
+          <td>Sexta-feira</td>
+          <td>08h - 18h</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>08h - 16h</td>
+        </tr>
+      </table>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodapeConteudo">
+        <div class="contato">
+          <p class="contatoTexto">
+            Contatos: <br />
+            Telefone: (51) 99133-6359 <br />
+            Email: contato@casakensy.com.br
+          </p>
+        </div>
+
+        <div class="horario">
+          <p>Horário: Seg-Sáb, 08h às 18h</p>
+          <a href="#horario" id="linkHorario">Ver detalhes</a>
+        </div>
+      </div>
+      <p id="direitos">Todos os direitos reservados &copy; 2023 Casa Kensy</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
